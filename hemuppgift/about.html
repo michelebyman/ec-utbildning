@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hemsida</title>
+  </head>
+
+  <style>
+  /*HERE STARTS THE CSS*/
+
+ main, section, article, aside {
+   padding: 25px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #83d0f2;
+   display: inline-block;
+   border: thin #c0c0c0 solid;
+
+ }
+
+  div.container{
+    width: 900px;
+    height: 1100px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: #fffffd;
+  }
+
+  nav {
+    position: fixed;
+    background-color: #83d0f2;
+    width:900px;
+
+  }
+  nav ul{
+    float: left;
+    list-style: none;
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  nav a:hover{
+    color: blue;
+  }
+
+  .highlight{
+    color: white;
+    font-weight: bold;
+
+  }
+
+  header{
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    background-color: #fffffd;
+   }
+
+   body{
+    background-color: #fffffd;
+   }
+
+   h1{
+     background-color: #fffffd;
+   }
+
+   a:visited{
+     color: white;
+   }
+
+  section{
+    float: left;
+    width: 250px;
+    height: auto;
+  }
+
+  .middle{
+    width: 205px;
+    float: inherit;
+    margin-left: 15px;
+    margin-right: 24px;
+    padding-bottom: 98px;
+  }
+
+  .aside{
+    float: right;
+    width: 250px;
+    height: auto;
+  }
+
+  .article{
+  width: auto;
+  height: auto;
+
+  }
+
+  footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 900px;
+   margin: auto;
+   background-color: #83d0f2;
+   color: white;
+   text-align: center;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+    background-color: #fffffd;
+    float: left;
+  }
+
+  </style>
+
+  <body>
+    <!-- HÄR BÖRJAR HTML -->
+    <div class="container">
+
+      <header>
+            <img src="testlogga.png" alt="logga" class="logga">
+            <h1>Header--Text to the loggo--Header</h1>
+
+        <nav>
+            <ul>
+              <span class="highlight">
+              <li>Jump to:</li>
+            </span>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+      </header>
+
+      <main>
+        <h2>Main</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </main>
+
+      <section>
+        <h2>Section</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section>
+
+      <section class="middle">
+        <h2>Section middle</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat.
+      </section>
+
+      <aside class="aside">
+        <h2>Aside</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </aside>
+
+      <article class="article">
+        <h2>Article</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </article>
+
+
+
+      <footer>
+        <p>©©©©©©©©FOOTER©©©©©©©©</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

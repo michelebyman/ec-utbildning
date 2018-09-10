@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hemsida</title>
+  </head>
+
+  <style>
+  /*HERE STARTS THE CSS*/
+
+ main, section, article, aside, .map {
+   padding: 25px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #83d0aa;
+   display: inline-block;
+   border: thin #c0c0c0 solid;
+
+ }
+
+  div.container{
+    width: 900px;
+    height: 1100px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: #fffffd;
+  }
+
+  nav {
+    position: fixed;
+    background-color: #83d0f2;
+    width:900px;
+
+  }
+  nav ul{
+    float: left;
+    list-style: none;
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  nav a:hover{
+    color: blue;
+  }
+
+  .highlight{
+    color: white;
+    font-weight: bold;
+
+  }
+
+  header{
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    background-color: #fffffd;
+   }
+
+   body{
+    background-color: #fffffd;
+   }
+
+   h1{
+     background-color: #fffffd;
+   }
+
+   a:visited{
+     color: white;
+   }
+
+  section{
+    float: left;
+    margin: auto;
+    height: auto;
+  }
+
+
+  footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 900px;
+   margin: auto;
+   background-color: #83d0f2;
+   color: white;
+   text-align: center;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+    background-color: #fffffd;
+    float: left;
+  }
+
+  button{
+    border-radius: 10px;
+    margin-left: 90px;
+  }
+
+  input {
+    border-radius: 10px;
+  }
+
+  article{
+    border-radius: 10px;
+  }
+
+  fieldset{
+    border-radius: 10px;
+  }
+
+  .article{
+    float: left;
+  }
+
+  iframe{
+  margin: auto;
+  padding: inherit;
+  }
+
+  .map{
+    width: 94.35%;
+  }
+
+
+  </style>
+
+  <body>
+    <!-- HÄR BÖRJAR HTML -->
+    <div class="container">
+
+      <header>
+            <img src="testlogga.png" alt="logga" class="logga">
+            <h1>Header--Text to the loggo--Header</h1>
+
+        <nav>
+            <ul>
+              <span class="highlight">
+              <li>Jump to:</li>
+            </span>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+      </header>
+
+      <span class="map">
+
+        <h2>Contact us</h2>
+        <form class="" action="index.html" method="post">
+         <fieldset>
+           <legend>If you want to be contacted, please leave your information!</legend><br>
+           <label>Name:
+             <input type="name" name="" value="" placeholder="" required>
+             <br>
+           </label>
+           <br>
+           <label>Email:
+             <input type="email" value="" placeholder="" required>
+             <br>
+           </label>
+           <br>
+           <label>Phone:
+             <input type="phone" value="" placeholder="" required>
+             <br>
+           </label>
+           <br>
+           <button type="button" name="name">Contact me</button>
+          </fieldset>
+        </form>
+        <br>
+        <hr>
+
+        <h2>Visit us</h2>
+        <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.534888013506!2d-73.99542998431023!3d40.72825437933008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599a9533481f%3A0x7a244f5450b5a18!2s400+Lafayette+St%2C+New+York%2C+NY+10003%2C+USA!5e0!3m2!1ssv!2sse!4v1536478433899" width="800" height="350" frameborder="" style="border:0" allowfullscreen>
+        </iframe>
+
+      </span>
+
+
+      <footer>
+        <p>©©©©©©©©FOOTER©©©©©©©©</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

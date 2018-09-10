@@ -3,37 +3,70 @@
   <head>
     <meta charset="utf-8">
     <title>Have fun World</title>
+
     <style>
+    /*HERE STARTS THE CSS*/
+
+    body
+       {
+      background-color: #BDB4BF;
+    }
     h1 {
-      color: blue; font-family: cursive;
+      color: brown;
+      font-family: cursive;
       text-decoration: underline;
     }
   h2 {
-    color: red; font-family: cursive;
+    color: yellow;
+    font-family: cursive;
   }
   p {
-    color: green; font-family: monospace;
+    color: green;
+    font-family: monospace;
+    font-size: 18px
   }
   table {
     border: 1px solid black;
     border-collapse: collapse;
   }
   th {
-    color: purple; font-size: 14px; font-family: fantasy;
+    color: purple;
+    font-size: 14px;
+    font-family: fantasy;
   }
   td {
-    color: black; font-size: 12px; font-family: fantasy;
+    color: black;
+    font-size: 12px;
+    font-family: fantasy;
   }
   form {
     width: 25%
+  }
+  button {
+    color: green;
+    font-family: fantasy;
+  }
+  .highlight {
+    color: red;
+    size: 22px;
+    background-color: black;
+    margin:25px;
+    display:inline-block;
+    padding:25px;
   }
 
     </style>
   </head>
   <body>
+    <!-- HÄR BÖRJAR HTML -->
     <h1>Hello World!</h1>
-    <img src="../bilder/globe.jpg"
-    alt="the globe" title="the World" height="100" width="100">
+    <img
+      src="../bilder/globe.jpg"
+      alt="the globe"
+      title="the World"
+      height="100"
+      width="100"
+    >
     <p>Hope You are <em>Well!</em></p><hr><br>
     <p>My favorit places in the world:</p>
 
@@ -93,6 +126,7 @@
       <td>8</td>
     </tr>
   </table>
+
   <br>
   <hr>
 
@@ -101,18 +135,50 @@
    <fieldset>
      <legend>Sign up, if you want good travel-tips!</legend><br>
      <label>Email:
-     <input type="email" name="" value="" placeholder="email" required><br></label><br>
+       <input type="email" name="" value="" placeholder="email" required>
+       <br>
+     </label>
+     <br>
      <label>Password:
-     <input type="password" value="" placeholder="password" required><br></label><br>
-     <button type="button" name="button">YES,PLEASE!</button>
+       <input type="password" value="" placeholder="password" required>
+       <br>
+     </label>
+     <br>
+     <button type="button" name="name">Yes, please!</button>
+     <button type="button" name="name">New password</button>
     </fieldset>
   </form>
+
+  <br>
+
+  <hr>
+  <form class="" action="index.html" method="post">
+    <fieldset>
+      <legend>Unsubscribe</legend>
+       <br><label>Email:
+        <input type="email" name="" value=""><br><br>
+        <button type="button" name="button">Thanks!</button>
+      </label>
+    </fieldset>
+
+  </form>
+
 
   <hr>
     <h2>What do you do today?</h2>
     <p>Hope you do something <em>fun</em> :)<p/><br>
-    <img src="../bilder/happyface.jpeg"
-    alt="happy face" height="100" width="100"><hr>
+      <p>I want you to
+        <span class="highlight">have the most amazing day of your life</span>
+      </p>
+
+    <img
+      src="../bilder/happyface.jpeg"
+      alt="happy face"
+      height="100"
+      width="100"
+    >
+
+    <hr>
     <a href="file:///Users/michelebyman/Documents/hemsida/html/hello.html"
     >Visit Hello Html</a>
 

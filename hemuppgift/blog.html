@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hemsida</title>
+  </head>
+
+  <style>
+  /*HERE STARTS THE CSS*/
+
+ main, section, article, aside {
+   padding: 25px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #83df2f;
+   display: inline-block;
+   border: thin #c0c0c0 solid;
+
+ }
+
+  div.container{
+    width: 900px;
+    height: 1100px;
+    margin: auto;
+    margin-top: 140px;
+    background-color: #fffffd;
+  }
+
+  nav {
+    position: fixed;
+    background-color: #83d0f2;
+    width:900px;
+
+  }
+  nav ul{
+    float: left;
+    list-style: none;
+  }
+
+  nav li{
+    display: inline-block;
+    margin-left: 70px;
+  }
+
+  nav a:hover{
+    color: blue;
+  }
+
+  .highlight{
+    color: white;
+    font-weight: bold;
+
+  }
+
+  header{
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    background-color: #fffffd;
+   }
+
+   body{
+    background-color: #fffffd;
+   }
+
+   h1{
+     background-color: #fffffd;
+   }
+
+   a:visited{
+     color: white;
+   }
+
+   .bild {
+     width: 100%;
+     height: 150px;
+
+   }
+
+  section{
+    float: left;
+    width: 525px;
+    height: 300px;
+  }
+
+  .aside{
+    float: right;
+    width: 250px;
+    height: 300px;
+  }
+
+  .article{
+  width: 94.3%;
+  height: auto;
+  color: #fffffd;
+  border-radius: 10px;
+
+  }
+
+  footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 900px;
+   margin: auto;
+   background-color: #83d0f2;
+   color: white;
+   text-align: center;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+    background-color: #fffffd;
+    float: left;
+  }
+
+
+  form {
+      width: 40%;
+      float: left;
+      margin-right: 10px;
+      color: #fffffd;
+    }
+
+    .text {
+      color: #fffffd;
+      font-family: cursive;
+      margin-top: 10px;
+
+    }
+
+    button{
+      border-radius: 10px;
+    }
+
+    input{
+      border-radius: 10px;
+    }
+
+    fieldset{
+      border-radius: 10px;
+    }
+
+  </style>
+
+  <body>
+    <!-- HÄR BÖRJAR HTML -->
+    <div class="container">
+
+      <header>
+            <img src="testlogga.png" alt="logga" class="logga">
+            <h1>Header--Text to the loggo--Header</h1>
+
+        <nav>
+            <ul>
+              <span class="highlight">
+              <li>Jump to:</li>
+            </span>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+      </header>
+
+        <img src="finger.png" alt="keyboard" class="bild">
+
+      <main>
+        <h2>Main</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </main>
+
+      <section>
+        <h2>Section</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section>
+
+
+      <aside class="aside">
+        <h2>Aside</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </aside>
+
+      <article class="article">
+        <h2>Subscribe</h2>
+        <form class="" action="index.html" method="post">
+         <fieldset>
+           <legend>Sign up, if you want to follow my blog!</legend><br>
+           <label>Name:
+             <input type="name" name="" value="" placeholder="" required>
+             <br>
+           </label>
+           <br>
+           <label>Email:
+             <input type="email" value="" placeholder="" required>
+             <br>
+           </label>
+           <br>
+             <button type="button" name="name">Yes, please!</button>
+             <button type="button" name="name">New password</button>
+          </fieldset>
+        </form>
+
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+
+      </article>
+
+
+
+      <footer>
+        <p>©©©©©©©©FOOTER©©©©©©©©</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
