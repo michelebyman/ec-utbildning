@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #6A1384;
+  color: #FFF;
+  text-align: center;
+}
+
+header > div {
+  padding: 20px;
+  font-size: 50px;
+}
+
+header .small-title {
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #eaeaea;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 10px;
+  color: #000;
+}
+
+@media (min-width: 1200px) {
+.big-title {
+  display: none;
+}
+}
+
+@media (max-width: 600px) {
+  .small-title {
+    padding: 20px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .biggest-title {
+    padding: 20px;
+    font-size: 50px;
+    display: none;
+  }
+}

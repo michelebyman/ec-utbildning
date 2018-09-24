@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>layout2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <style>
+
+  html, body {
+  box-sizing: border-box;
+  }
+
+  * {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  }
+
+  body {
+
+  }
+
+  header {
+    width: 80%;
+    height: 70px;
+    background-color: lightgrey;
+    color: #656060;
+    margin-left: 200px;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: -6px 10px 7px -7px rgba(0,0,0,0.25);
+  }
+
+  .sidebar {
+    width: 200px;
+    height: 1000px;
+    background-color: #5d6591;
+    position: fixed;
+    top: 150px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-top: 35px;
+
+  }
+
+  .logga {
+    width: 200px;
+    height: 150px;
+    background-color: #363948;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul li {
+    list-style: none;
+    font-size: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .material-icons {
+    padding-right: 30px;
+    font-size: 25px;
+  }
+
+  </style>
+
+  <body>
+
+    <header>
+      <p>HOME</p>
+    </header>
+
+
+    <div class="logga">
+      <p>LOGGA</p>
+    </div>
+
+
+    <div class="sidebar">
+      <ul>
+      <li class="aktiv"><i class="material-icons">home</i><a href="google.se">Hem</li></a>
+      <li class="aktiv"><i class="material-icons">inbox</i><a href="google.se">Inbox</li></a>
+      <li class="aktiv"><i class="material-icons">delete</i><a href="google.se">Trash</li></a>
+      <li class="aktiv"><i class="material-icons">report</i><a href="google.se">Spam</li></a>
+      <li class="aktiv"><i class="material-icons">forum</i><a href="google.se">Forums</li></a>
+      <li class="aktiv"><i class="material-icons">flag</i><a href="google.se">Updates</li></a>
+      <li class="aktiv"><i class="material-icons">local_offer</i><a href="google.se">Promos</li></a>
+      <li class="aktiv"><i class="material-icons">shopping_cart</i><a href="google.se">Purchases</li></a>
+      <li class="aktiv"><i class="material-icons">group</i><a href="google.se">Social</li></a>
+
+      </ul>
+
+    </div>
+
+  </body>
+</html>
