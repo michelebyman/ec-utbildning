@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="transform.css">
+    <title>Övningar - Transform</title>
+  </head>
+
+  <style media="screen">
+  .container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50vh;
+}
+
+.shape {
+height: 100px;
+width: 100px;
+border: 1px solid #ccc;
+}
+
+.circle {
+border-radius: 50px;
+transform: scale(2.0);
+}
+
+.box {
+/** Implement **/
+}
+
+.c1 {
+/** Implement **/
+}
+
+.c2 {
+/** Implement **/
+}
+
+.c3 {
+/** Implement **/
+}
+
+.s-image {
+  width: 300px;
+}
+
+.image-container {
+margin: 200px 0;
+}
+
+.image-container img,
+.shadow {
+height: 300px;
+background-color: #ccc;
+}
+
+.container.top {
+background-image: url(resources/forest.jpg);
+height: 500px;
+}
+
+.container.bottom {
+background: #ddd;
+height: 500px;
+}
+  </style>
+  <body>
+    <h1>Övning 1 och 2</h1>
+    <div class="container">
+      <div class="shape box"></div>
+      <div class="shape circle"></div>
+    </div>
+    <h1>Övning 3</h1>
+    <div class="container">
+      <img class="s-image" src="resources/uggla.png"></img>
+    </div>
+    <h1>Övning 4</h1>
+    <div class="container">
+      <div class="shape circle c1"></div>
+      <div class="shape circle c2"></div>
+      <div class="shape circle c3"></div>
+    </div>
+    <h1>Övning 5</h1>
+    <div class="container image-container">
+      <div class="shadow">
+        <img src="resources/sidensvans.png"></img>
+      </div>
+    </div>
+    <h1>Övning 6</h1>
+    <div class="container top"></div>
+    <div class="container bottom"></div>
+    <div class="images">
+      <img src="resources/bird_shama.png" />
+      <img src="resources/bird_zebraduva.png" />
+      <img src="resources/bird_risfagel.png" />
+    </div>
+  </body>
+</html>

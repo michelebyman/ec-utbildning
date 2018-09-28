@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <title>layout3</title>
+
+  </head>
+
+  <style>
+
+  html, body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  }
+
+  * {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  }
+
+    body {
+    margin: auto;
+    background-color: #fefcf3;
+
+    }
+
+    .linje{
+      position: absolute;
+      width: 444px;
+      height: 50px;
+      top: 230px;
+      left: -305px;
+      background-image: linear-gradient( 180deg, #673ab6, #673ab6 5px, transparent 0)
+      ;
+    }
+    .linje::after {
+      content: "";
+      position: absolute;
+      width: 444px;
+      height: 50px;
+      top: 13px;
+      background-image: linear-gradient( 180deg, #673ab6, #673ab6 5px, transparent 0)
+      ;
+    }
+
+    .linje::before {
+      content: "";
+      position: absolute;
+      width: 444px;
+      height: 50px;
+      top: 25px;
+      background-image: linear-gradient( 180deg, #673ab6, #673ab6 5px, transparent 0)
+      ;
+    }
+
+
+  header {
+    max-width: 1000px;
+    height: 400px;
+    background-color: #fefcf3;
+    color: #656060;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image:
+    linear-gradient( -40deg, #ffd54e, #ffd54e 200px, transparent 0)
+    ;
+    position: relative;
+  }
+
+  .text-header {
+    padding-left: 128px;
+  }
+
+  header h1 {
+    font-size: 44px;
+  }
+
+  section {
+    width: 100%;
+    background-color: #fefcf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    background-color: #fefcf3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .två {
+    display: flex;
+  }
+
+  .box {
+    width: 150px;
+    height: 300px;
+    background-color: #fff8e0;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #f2f0e7;
+    box-shadow: -1px 7px 5px -5px rgba(189,189,189,1);
+    background-image: url("face.jpeg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    padding-top: 48%;
+    text-align: left;
+    padding-left: 13px;
+  }
+
+  .box p {
+    font-size: 10px;
+    line-height: 14px;
+    color: #858075
+  }
+
+  .box h6 {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #858075;
+    padding-top: 10px;
+  }
+
+  .icon p {
+    font-size: 8px;
+    padding-left: 10px;
+  }
+
+  .box-stor {
+    width: 320px;
+    height: 320px;
+    background-color: #fff8e0;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #f2f0e7;
+    box-shadow: -1px 7px 5px -5px rgba(189,189,189,1);
+    background-image: url("face.jpeg"), linear-gradient(180deg, #212121, #212121 100%, transparent 0);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    padding-top: 25%;
+    padding-left: 10px;
+  }
+
+  .box-stor p {
+    font-size: 10px;
+    line-height: 14px;
+    color: #858075
+  }
+
+  .box-stor h6 {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #858075;
+    padding-top: 10px;
+  }
+
+  .icon p {
+    font-size: 8px;
+    padding-left: 10px;
+  }
+
+  .p-stor > p{
+    font-style: bold;
+    color: black;
+    padding-left: 55px;
+    margin-top: -20px;
+  }
+  .grå-text-stor {
+    padding-top: 20px;
+    padding-left: 3px;
+  }
+
+  .space-between {
+    display: flex;
+  }
+
+  .hej-stor > p {
+   padding-left: 125px;
+   font-weight: bold;
+   font-size: 20px;
+   padding-top: 20px;
+  }
+
+  .ikon-stor > i{
+    color: #e6e6e6;
+    margin-left: 0;
+    padding-right: 10px;
+    font-size: 45px;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -14px;
+
+  }
+
+  button {
+    display: flex;
+    justify-content: flex-start;
+    color: #7f59be;
+    background-color: #fff8e0;
+    border: none;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 700px){
+  .linje {
+      display: none;
+    }
+  }
+
+
+
+
+
+  </style>
+
+
+  <body>
+
+    <header>
+      <div class="linje"></div>
+
+      <div class="text-header">
+        <h1>Card Exempels</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrapper">
+
+        <div class="två">
+          <div class="box">
+            <div class="text">
+              <p>OVERLINE</p>
+              <h6>Headline 6</h6>
+              <div class="grå-text">
+                <p>Greyhound hello <br>
+                  coldly woderfully <br>
+                  marginally far
+                </p>
+                <div class="icon">
+                  <i class="material-icons">share</i>
+                  <p>Meta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="text">
+              <p>OVERLINE</p>
+              <h6>Headline 6</h6>
+              <div class="grå-text">
+                <p>Greyhound hello <br>
+                  coldly woderfully <br>
+                  marginally far
+                </p>
+                <div class="icon">
+                  <i class="material-icons">share</i>
+                  <p>Meta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="två">
+          <div class="box">
+            <div class="text">
+              <p>OVERLINE</p>
+              <h6>Headline 6</h6>
+              <div class="grå-text">
+                <p>Greyhound hello <br>
+                  coldly woderfully <br>
+                  marginally far
+                </p>
+                <div class="icon">
+                  <i class="material-icons">share</i>
+                  <p>Meta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="text">
+              <p>OVERLINE</p>
+              <h6>Headline 6</h6>
+              <div class="grå-text">
+                <p>Greyhound hello <br>
+                  coldly woderfully <br>
+                  marginally far
+                </p>
+                <div class="icon">
+                  <i class="material-icons">share</i>
+                  <p>Meta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper">
+
+        <div class="box-stor">
+          <div class="text-stor">
+
+              <div class="space-between">
+                <div class="ikon-stor">
+                <i class="material-icons">error</i>
+                </div>
+                <div class="h6-stor">
+                <h6>Headline 6</h6>
+                </div>
+                <div class="hej-stor">
+                  <p>^</p>
+                </div>
+              </div>
+            <div class="p-stor">
+              <p>Body 2</p>
+            </div>
+
+            <div class="grå-text-stor">
+              <p>Greyhound hello marginally
+                coldly woderfully marginally
+                marginally far upon.
+              </p>
+            </div>
+
+            <div class="button">
+              <button type="button" name="button">Button</button>
+              <button type="button" name="button">Button</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-stor">
+          <div class="text-stor">
+
+              <div class="space-between">
+                <div class="ikon-stor">
+                <i class="material-icons">error</i>
+                </div>
+                <div class="h6-stor">
+                <h6>Headline 6</h6>
+                </div>
+                <div class="hej-stor">
+                  <p>^</p>
+                </div>
+              </div>
+            <div class="p-stor">
+              <p>Body 2</p>
+            </div>
+
+            <div class="grå-text-stor">
+              <p>Greyhound hello marginally
+                coldly woderfully marginally
+                marginally far upon.
+              </p>
+            </div>
+
+            <div class="button">
+              <button type="button" name="button">Button</button>
+              <button type="button" name="button">Button</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </section>
+
+  </body>
+</html>

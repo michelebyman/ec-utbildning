@@ -36,18 +36,68 @@ header .small-title {
   display: none;
 }
 }
-
-@media (max-width: 600px) {
-  .small-title {
-    padding: 20px;
-    font-size: 50px;
-  }
-}
-
 @media (max-width: 1200px) {
   .biggest-title {
     padding: 20px;
     font-size: 50px;
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header .small-title {
+    padding: 20px;
+    font-size: 50px;
+    display: block;
+  }
+  .big-title {
+    display: none;
+  }
+  .sidebar{
+    width: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media print {
+  .sidebar, header {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) and (orientation: portrait), (orientation: landscape) {
+  .sidebar {
+    position: fixed;
+    right: 0;
+    height: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 700px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media (min-width:700px) and (max-width: 1000px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media (min-width:1000px) and (max-width: 1200px) {
+  body {
+    background-color: green;
   }
 }

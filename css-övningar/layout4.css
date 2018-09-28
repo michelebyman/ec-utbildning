@@ -1,0 +1,116 @@
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: #fefcf3;
+  background-image: linear-gradient(90deg, #ffce42, #ffce42 280px, transparent 0);
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  padding-left: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.text {
+  width: 100%;
+  height: 100px;
+}
+
+.text h1 {
+  font-size: 85px;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #673ab6;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding-left: 165px;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.bild {
+  width: 100%;
+  height: 400px;
+  background-image: url("file:///Users/michelebyman/Documents/ec-utboldning/css-o%CC%88vningar/roadnature.jpeg");
+  background-size: cover;
+  position: relative;
+}
+
+.opacity {
+  width: 280px;
+  height: 400px;
+  opacity: 0.3;
+  background-color: orange;
+  position: absolute;
+  top: 375px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.text-section-mitten h1, .text-section-botten h1{
+  padding-top: 90px;
+}
+
+
+.text-section, .text-section-mitten, .text-section-botten {
+  width: 400px;
+  padding-left: 165px;
+}
+
+.text-section {
+  padding-top: 20px;
+}
+
+.text-section h1, .text-section-botten h1,
+.text-section-mitten h1  {
+  font-size: 45px;
+}
+
+.bild-wrap {
+  width: 300px;
+}
+
+img {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 40px;
+}
