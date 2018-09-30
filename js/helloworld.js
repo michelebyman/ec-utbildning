@@ -1,3 +1,5 @@
+
+/*
 console.log("Hello world!");
 console.log(2*2);
 var mynumber = 5;
@@ -95,3 +97,18 @@ function getFirstLetters(myString) {
 
 console.log('getFirstLetters');
 console.log(getFirstLetters('I love JavaScript'));
+
+*/
+/*
+let m = 7;
+console.log(typeof m);
+
+let r = true;
+console.log(typeof r);
+
+let j = 'hello world';
+console.log(typeof j);
+*/
+let a;
+console.log(a);
+console.log(typeof a);

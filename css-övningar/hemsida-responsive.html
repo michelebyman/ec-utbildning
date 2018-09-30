@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <title>Responsive</title>
+  </head>
+
+  <style media="screen">
+
+    html, body {
+    box-sizing: border-box;
+    }
+
+    * {
+    box-sizing: inherit;
+    font-family: 'Khula', sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+
+    header{
+      width: 100%;
+      height: 200px;
+      background-color: #673ab6;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      margin: 0;
+      color: white;
+      padding-left: 20px;
+    }
+
+    .nav {
+      width: 100%;
+      height: 80px;
+      background-color: #512da8;
+      display: flex;
+      justify-content: flex-start;
+      text-transform: uppercase;
+      align-items: center;
+      position: relative;
+    }
+
+     .list {
+      min-width: 50%;
+      display: flex;
+      list-style: none;
+      color: #b4a6db;
+      padding-left: 30px;
+      justify-content: space-around;
+    }
+
+    .nav > ul > li > a {
+      color: white;
+      text-decoration: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 27px;
+    }
+
+    .aktiv {
+      border-bottom: 4px solid white;
+    }
+
+    .nav > ul > li:hover {
+      transform: scale(1.2);
+    }
+
+    .add-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #f73f81;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 250px;
+      right: 40px;
+      }
+
+      .add-circle > .material-icons {
+        color: white;
+      }
+
+      main {
+        width: 100%;
+        min-height: 500px;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 80%;
+        height: 300px;
+        background-color: lightblue;
+        display: flex;
+        box-shadow: 10px 10px 5px -7px rgba(182,182,182,1);
+      }
+
+      .video {
+        height: 100%;
+        min-width: 300px;
+        background-color: #b2dedb;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .video > .material-icons {
+        font-size: 54px;
+        color: #fff;
+      }
+
+      .sidan {
+        height: 100%;
+        background-color: #fff;
+        flex-grow: 4;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .toppen {
+        height: 80%;
+        background-color: #fff;
+        padding-top: 20px;
+        overflow: scroll;
+      }
+
+      .toppen h1, .toppen p {
+        padding-left: 40px;
+        padding-right: 40px;
+        color: #6e6563;
+      }
+
+      .icon {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-top: 10px;
+        color: #6e6560;
+      }
+
+      .botten {
+        height: 20%;
+        background-color: #fff;
+        border-top: 1px solid lightgrey;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+      }
+
+      span > h2 {
+        color: #49bdd6;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+
+      .wrapper {
+       width: 100%;
+       height: 300px;
+       background-color: white;
+       display: flex;
+       justify-content: flex-start;
+      }
+
+      .test {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 52px;
+      }
+
+      .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #f73f81;
+      }
+
+      .lorem {
+        padding-left: 10px;
+      }
+
+      .lorem, h3, p {
+        color: #686866;
+        margin-bottom: 26px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+
+        footer {
+          width: 100%;
+          height: 250px;
+          background-color: #424242;
+          display: flex;
+        }
+
+        .fot-box {
+          width: 25%;
+          height: 100%;
+          padding-left: 40px;
+        }
+
+        footer > .fot-box > ul > li {
+          display: flex;
+          flex-direction: column;
+          padding-left: 30px;
+        }
+
+
+        footer > .fot-box > ul >li:first-child {
+         padding-bottom: 20px;
+         padding-top: 40px;
+         color: white;
+         font-weight: bold;
+        }
+
+        footer > .fot-box > ul >li {
+          color: #9b9a99;
+          font-weight: bold;
+        }
+
+
+
+
+    @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .nav {
+    width: 100%;
+    min-height: 180px;
+    background-color: #512da8;
+    display: flex;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+   .list {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    color: #b4a6db;
+    flex-direction: column;
+    align-items: center;
+    line-height: 33px;
+    padding-left: 0px;
+  }
+
+  .nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0.5px;
+  }
+
+  .aktiv {
+    border-bottom: 2px solid white;
+  }
+
+  .add-circle {
+    top: 350px;
+    right: 40px;
+    }
+
+    main {
+      width: 100%;
+      min-height: 500px;
+      background-color: #f5f5f5;
+      display: flex;
+    }
+
+    .box {
+      width: 100%;
+      min-height: 700px;
+      background-color: lightblue;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none;
+    }
+
+    .video {
+      height: 50%;
+      min-width: 100%;
+      background-color: #b2dedb;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video > .material-icons {
+      font-size: 54px;
+      color: #fff;
+    }
+
+    .sidan {
+      height: 50%;
+      background-color: #fff;
+      flex-grow: 4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .toppen {
+      height: 80%;
+      background-color: #fff;
+      padding-top: 20px;
+    }
+
+    .toppen h1, .toppen p {
+      padding-left: 40px;
+      padding-right: 40px;
+      color: #6e6563;
+    }
+
+    .icon {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+      padding-top: 10px;
+      color: #6e6560;
+    }
+
+    .botten {
+      height: 20%;
+      background-color: #fff;
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+      padding-left: 60px;
+    }
+
+    span > h2 {
+      color: #49bdd6;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .wrapper {
+     width: 100%;
+     min-height: 400px;
+     background-color: white;
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+    }
+
+    .test {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .circle {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: #f73f81;
+    }
+
+    .lorem {
+      padding-left: 10px;
+    }
+
+    .lorem, h3, p {
+      color: #686866;
+      margin-bottom: 5px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    footer {
+      width: 100%;
+      min-height: 350px;
+      background-color: #424242;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .fot-box {
+      width: 50%;
+      height: 50%;
+      padding-left: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    footer > .fot-box > ul > li {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+
+}
+
+
+  </style>
+
+  <body>
+    <header>
+      <h1>Logga och Namn</h1>
+    </header>
+
+    <nav class="nav">
+      <ul class="list">
+        <li><a class="aktiv" href="">overview</a></li>
+        <li><a href="">features</a></li>
+        <li><a href="">details</a></li>
+        <li><a href="">technology</a></li>
+        <li><a href="">faq</a></li>
+      </ul>
+    </nav>
+
+    <div class="add-circle">
+      <i class="material-icons">add</i>
+    </div>
+
+
+        <main>
+          <div class="box">
+            <div class="video">
+             <i class="material-icons">play_circle_filled</i>
+
+            </div>
+
+            <div class="sidan">
+                <div class="toppen">
+                  <div class="icon">
+                    <i class="material-icons">more_vert</i>
+                  </div>
+                  <h1>Features</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+              <div class="botten">
+                <span>
+                  <h2>Read our Features</h2>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <div class="wrapper">
+
+          <div class="test">
+            <div class="skydd">
+              <div class="circle"></div>
+            </div>
+
+            <span class="lorem">
+              <h3>Lorem ipsimmmmm</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </span>
+          </div>
+
+
+          <div class="test">
+            <div class="skydd">
+              <div class="circle"></div>
+            </div>
+
+            <span class="lorem">
+              <h3>Lorem ipsimmmmm</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </span>
+          </div>
+        </div>
+
+
+            <footer>
+
+              <div class="fot-box">
+                <ul>
+                  <li>Features</li>
+                  <li>About</li>
+                  <li>Terms</li>
+                  <li>Partners</li>
+                  <li>Terms</li>
+                </ul>
+              </div>
+
+              <div class="fot-box">
+                <ul>
+                  <li>Details</li>
+                  <li>Spec</li>
+                  <li>Tools</li>
+                  <li>Resources</li>
+                </ul>
+              </div>
+
+              <div class="fot-box">
+                <ul>
+                  <li>Technology</li>
+                  <li>How it works</li>
+                  <li>Patterns</li>
+                  <li>Usage</li>
+                  <li>Products</li>
+                  <li>Contracts</li>
+                </ul>
+
+              </div>
+
+              <div class="fot-box">
+                <ul>
+                  <li>Faq</li>
+                  <li>Questions</li>
+                  <li>Answers</li>
+                  <li>Contact us</li>
+                </ul>
+              </div>
+
+            </footer>
+
+
+
+
+  </body>
+</html>
