@@ -19,22 +19,20 @@ flex-direction: column-reverse;
 .ex_2 .layout {
   display: flex;
   margin-bottom: 30px;
-
-
-
+  display: flex;
 }
 
 .ex_2 .layout .box {
   height: 50px;
   padding: 10px;
   background: #F7A21B;
-
+  flex-grow: 2;
 
 }
 
 .ex_2 .layout > .box:nth-child(odd) {
   background: #6A1384;
-
+  flex-grow: 1;
 
 }
 
@@ -47,8 +45,14 @@ flex-direction: column-reverse;
 
 .ex_3 .layout .box {
   height: 50px;
+  flex-basis: 200px;
+  box-sizing: border-box;
   padding: 10px;
   background: #F7A21B;
+}
+
+.ex_3 .layout > .box:nth-child(even){
+  flex-shrink: 2;
 }
 
 .ex_3 .layout > .box:nth-child(odd) {
@@ -91,11 +95,11 @@ flex-direction: column-reverse;
   width: 600px;
   border: 1px solid #ccc;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+
+
+
 }
 
 /* Övning 6 */
@@ -111,8 +115,10 @@ flex-direction: column-reverse;
 .ex_6 .box:nth-child(odd) {
   height: 40px;
   width: 40px;
+
 }
 
 .ex_6 .layout {
-
+display: flex;
+align-items: flex-end;
 }

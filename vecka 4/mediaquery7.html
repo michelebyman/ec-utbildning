@@ -12,7 +12,7 @@
      box-sizing: border-box;
      }
 
-     * {
+     *, *::before, *::after {
      box-sizing: inherit;
      margin: 0;
      padding: 0;
@@ -34,7 +34,13 @@
 
      @media (max-width:700px) {
       .box {
-        width: calc(33%-10px)
+        width: calc(50% - 10px);
+       }
+     }
+
+     @media (max-width:350px) {
+      .box {
+        width: calc(100% - 10px);
        }
      }
 
@@ -53,7 +59,6 @@
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-
     </div>
 
   </body>

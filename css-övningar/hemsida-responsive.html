@@ -103,15 +103,15 @@
       }
 
       .box {
-        width: 80%;
-        height: 300px;
+        min-width: 80%;
+        min-height: 300px;
         background-color: lightblue;
         display: flex;
         box-shadow: 10px 10px 5px -7px rgba(182,182,182,1);
       }
 
       .video {
-        height: 100%;
+        min-height: 100%;
         min-width: 300px;
         background-color: #b2dedb;
         flex-grow: 1;
@@ -126,18 +126,17 @@
       }
 
       .sidan {
-        height: 100%;
         background-color: #fff;
-        flex-grow: 4;
+        flex-grow: 2;
         display: flex;
         flex-direction: column;
       }
 
       .toppen {
-        height: 80%;
         background-color: #fff;
         padding-top: 20px;
-        overflow: scroll;
+        flex-grow: 1;
+
       }
 
       .toppen h1, .toppen p {
@@ -155,7 +154,7 @@
       }
 
       .botten {
-        height: 20%;
+        flex-basis: 80px;
         background-color: #fff;
         border-top: 1px solid lightgrey;
         display: flex;
@@ -294,10 +293,10 @@
     }
 
     .video {
-      height: 50%;
       min-width: 100%;
       background-color: #b2dedb;
       display: flex;
+      flex-grow: 3;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -311,7 +310,7 @@
     .sidan {
       height: 50%;
       background-color: #fff;
-      flex-grow: 4;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
@@ -371,6 +370,7 @@
     }
 
     .circle {
+      display: none;
       width: 75px;
       height: 75px;
       border-radius: 50%;
