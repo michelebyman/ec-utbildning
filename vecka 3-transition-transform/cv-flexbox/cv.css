@@ -1,0 +1,204 @@
+<style>
+
+  html, body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika', sans-serif;
+}
+
+/*här bärjar headern*/
+header {
+  top: 0;
+  width: 1200px;
+  height: 400px;
+  margin: auto;
+  background-image: url("back.jpeg");
+}
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-top: 40px;
+  padding-left: 98px;
+}
+
+h3 {
+  color: blue;
+  font-weight: normal;
+  }
+
+p {
+  color: white;
+  font-size: 23px;
+  padding-left: 99px;
+  margin-top: -20px;
+}
+
+.p p {
+  font-size: 130px;
+  margin-top: 110px;
+  padding-left: 91px;
+}
+
+/*Här tar headern slut*/
+
+
+/*här bärjar bodyn*/
+
+.wrapper {
+  width: 1000px;
+  height:1500px;
+  margin: auto;
+
+}
+
+/* här kan du ändra fonter */
+h2 {
+ color: blue;
+ font-size: 34px;
+}
+
+h3 {
+  color: blue;
+  font-weight: normal;
+  }
+
+.section-bottom1-tek p,
+.section-middle2   p,
+.section-bottom1 p,
+.section-middle2-bottom p,
+.section-middle2-middle p {
+  color: black;
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+}
+.section-middle2-bottom ul {
+  padding-left: : 40px;
+  list-style-type: none;
+  line-height: 1.3em;
+}
+
+/*här är strukturen av cv:et*/
+
+.container-top {
+  width: 1000px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-top {
+  height: 200px;
+  width: 78%;
+  padding-top: 40px;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-wrapper p {
+  padding-left: 135px;
+  color: black;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.text-wrapper1 p {
+  padding-left: 100px;
+  color: black;
+  font-size: 17px;
+  padding-bottom: 10px;
+
+}
+.text-wrapper1 {
+  padding-right: 64px;
+
+}
+.text-wrapper1 p p {
+  padding-left: 122px;
+  color: black;
+  font-size: 17px;
+  padding-bottom: 10px;
+
+}
+
+.sida-top,
+.sida-middle,
+.sida-middle-middle,
+.sida-middle-bottom,
+.sida-bottom,
+.sida-bottom1,
+.sida-bottom1-tek  {
+  min-height: 150px;
+  width: 20%;
+  padding: 35px;
+  padding-left: 0px;
+}
+
+.section-middle,
+.section-middle-middle,
+.section-middle-bottom,
+.section-middle-bottom1,
+.section-middle-bottom11,
+.section-middle-bottom11-tek  {
+  min-height: 200px;
+  width: 10%;
+  padding: 40px;
+}
+
+.section-middle2,
+.section-middle2-middle,
+.section-middle2-bottom,
+.section-bottom1,
+.section-bottom1-tek  {
+  min-height: 200px;
+  width: 60%;
+  padding: 40px;
+  padding-left: 0px;
+}
+
+.container-middle {
+  display: flex;
+  width: 1000px;
+  height: 160px;
+  margin: auto;
+}
+
+.container-middle-middle {
+  display: flex;
+  width: 1000px;
+  height: 130px;
+  margin: auto;
+}
+
+.container-middle-bottom {
+  display: flex;
+  height: 220px;
+  width: 1000px;
+  margin: auto;
+}
+
+.container-bottom {
+  display: flex;
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+}
+
+.utb-contanier,
+.utb-contanier-tek{
+  display: flex;
+  width: 1000px;
+  height: 70px;
+  margin: auto;
+}
+
+
+</style>

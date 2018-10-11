@@ -1,0 +1,76 @@
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Abel', sans-serif;
+}
+
+body {
+  width: 1000px;
+  height: 1500px;
+  margin: auto;
+}
+
+header {
+height: 400px;
+width: 1000px;
+background-image: url("smoothies-back.jpeg");
+background-size: 1000px 400px;
+background-repeat: no-repeat;
+margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ff9800;
+  margin-top: 0;
+  padding-left: 40px;
+  padding-top: 200px;
+}
+
+.rubrik h3 {
+ color: #807878;
+ margin-top: 0;
+ padding-top: 20px;
+ padding-left: 40px;
+ font-size: 22px;
+}
+
+
+td:last-child {
+  padding-right: 60px;
+}
+.material-icons {
+  float: right;
+  margin-top: -50px;
+  font-size: 22px;
+  padding-right: 40px;
+}
+
+
+table{
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+line-height: 40px;
+}
+
+table th {
+  color: #807878;
+  padding-left: 40px;
+  border-bottom: 1px solid #807878;
+}
+
+table td {
+  color: #807878;
+  padding-left: 40px;
+  border-bottom: 1px solid #807878;
+}
+
+tr:hover{
+  background-color: #B7DFE1;
+  box-shadow: 0px -5px 5px -2px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,29 @@
+
+/*Här börjar css för sidan*/
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+/*Här börjar css för.....*/
+
+
+
+
+
+
+
+
+
+
+/*Här är css för att göra sidan responsiv alltid under all annan css*/
+
+@media screen and (max-width: 600px) {
+
+}

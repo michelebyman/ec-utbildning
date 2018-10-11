@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>övning2</title>
+  </head>
+  <style>
+
+
+  /** Write your CSS here **/
+
+    /** uppgift a **/
+
+    .container .item-container .item {
+      background-color: blue;
+    }
+
+    /** uppgift b **/
+
+    .container .item-container .item:nth-child(odd){
+      background-color: red;
+    }
+
+    /** uppgift c **/
+
+      .outside > .item {
+      background-color: green;
+    }
+
+    /** uppgift d **/
+      .outside .item:last-child {
+      background-color: purple;
+    }
+
+
+/** Do not change this **/
+
+body {
+margin: 0;
+}
+
+.item {
+height: 100px;
+min-width: 100px;
+border: 1px solid #949494;
+margin: 10px 50px;
+}
+
+.item-container {
+display: flex;
+}
+  </style>
+
+  <body>
+
+    <div class="container">
+  <div class="item-container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+  <div class="item-container">
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+  </div>
+</div>
+<div class="outside item-container">
+  <div class="item">I</div>
+  <div class="item">J</div>
+  <div class="item">K</div>
+  <div>
+    <div class="item">L</div>
+  </div>
+</div>
+
+  </body>
+</html>

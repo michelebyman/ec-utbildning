@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Övning3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+
+  <style>
+
+  html, body {
+  box-sizing: border-box;
+  }
+
+  * {
+  box-sizing: inherit;
+  font-family: 'Khula', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+  nav{
+    width: 150px;
+    height: 100vh;
+    background-color: grey;
+    padding: 30px;
+  }
+
+  button {
+    width: 75px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 575px) {
+    ul {
+      display:none;
+    }
+  }
+
+  @media screen and (min-width: 575px) {
+    button {
+      display: none;
+    }
+  }
+
+
+
+  </style>
+
+  <body>
+
+    <nav>
+      <ul>
+        <li>Min Profil</li>
+        <li>Inställningar</li>
+        <li>Meddelande</li>
+        <li>Logut</li>
+      </ul>
+      <button type="button" name="button"><i class="fas fa-user"></i></button>
+      <button type="button" name="button"><i class="fas fa-cog"></i></button>
+      <button type="button" name="button"><i class="fas fa-envelope"></i></button>
+      <button type="button" name="button"><i class="fas fa-sign-out-alt"></i></button>
+    </nav>
+
+  </body>
+</html>

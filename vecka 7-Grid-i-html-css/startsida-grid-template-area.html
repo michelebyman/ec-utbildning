@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
+    <title>grid-area</title>
+
+
+  </head>
+
+<style>
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+
+.header {
+  grid-area: header;
+  background: linear-gradient(to right, rgba(159,63,228,1) 0%, rgba(75,209,173,1) 100%);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border-right: 2px solid grey;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.content {
+  grid-area: content;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "sidebar content content content"
+  "footer footer footer footer"
+}
+
+.box {
+    min-width: 50px;
+  }
+
+nav > ul > li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 10px;
+
+}
+
+</style>
+
+  <body>
+
+    <div class="wrap">
+
+        <div class="box header"> <h1>Header</h1> </div>
+        <div class="box sidebar">
+          <nav>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="box content">
+          <h1>Välkommen till denna sida</h1>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <br>
+          <img src="35.png" alt="fin kamera">
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        </div>
+        <div class="box footer">
+          <p>Footer</p>
+        </div>
+
+
+
+    </div>
+
+
+
+
+  </body>
+</html>

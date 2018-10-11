@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
+    <title>flexbox wrap, grow & responsive</title>
+
+
+  </head>
+
+<style>
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+    margin: 10px;
+    height: 600px;
+    width: 250px;
+    flex-grow: 1;
+    border: 1px solid #86dfff;
+    border-radius: 10px;
+  }
+
+  .cirkel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #57d4ff;
+  }
+
+  button {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid #86dfff;
+    font-weight: bold;
+    color: #6e259c
+  }
+
+  .cirkel p {
+    color: white;
+  }
+
+  p {
+    color: #661897;
+    font-weight: bold;
+  }
+
+</style>
+
+  <body>
+
+      <div class="wrap">
+
+          <div class="box">
+            <div class="cirkel">
+              <p>Pris</p>
+            </div>
+              <button type="button" name="button">Köp</button>
+
+          </div>
+
+          <div class="box">
+            <div class="cirkel">
+              <p>Pris</p>
+            </div>
+              <button type="button" name="button">Köp</button>
+          </div>
+
+          <div class="box">
+            <div class="cirkel">
+              <p>Pris</p>
+            </div>
+              <button type="button" name="button">Köp</button>
+          </div>
+
+</div>
+
+
+  </body>
+</html>

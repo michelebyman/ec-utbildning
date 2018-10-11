@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///Users/michelebyman/Documents/bootstrap/bootstrap-b.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Bootstrap</title>
+
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Bootstrap_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="./Bootstrap_files/icon" rel="stylesheet">
+      <link href="./Bootstrap_files/css" rel="stylesheet">
+      <link href="./Bootstrap_files/normalize.css" rel="stylesheet">
+
+  <style>
+
+      html, body {
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+      }
+
+      * {
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+      }
+
+      body {
+      margin: auto;
+      background-color: #fefcf3;
+
+      }
+
+      header {
+        max-width: 1000px;
+        height: auto;
+        background-color: #fefcf3;
+        color: #656060;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-image:
+        linear-gradient( -40deg, #ffd54e, #ffd54e 200px, transparent 0)
+        ;
+        position: relative;
+      }
+
+      header h1 {
+        font-size: 44px;
+      }
+
+      section {
+        width: 100%;
+        background-color: #fefcf3;
+      }
+
+      .box {
+        max-height: 400px;
+        background-color: #fff8e0;
+        border-radius: 10px;
+        border: 1px solid #f2f0e7;
+        box-shadow: -1px 7px 5px -5px rgba(189,189,189,1);
+        background-image: url("face.jpeg"), linear-gradient(180deg, #212121, #212121 100%, transparent 0);
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: auto 50%;
+        padding-top: 50%;
+      }
+
+      .box p {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #858075;
+      }
+
+      .icon {
+        color: #858075;
+        margin-bottom: 10px;
+      }
+
+      .box-stor {
+        max-height: 400px;
+        background-color: #fff8e0;
+        border-radius: 10px;
+        border: 1px solid #f2f0e7;
+        box-shadow: -1px 7px 5px -5px rgba(189,189,189,1);
+        background-image: url("face.jpeg"), linear-gradient(180deg, #212121, #212121 100%, transparent 0);
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: auto 50%;
+        padding-top: 35%;
+      }
+
+      .box-stor p {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #858075
+      }
+
+      .icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #858075;
+        padding-top: -10px;
+      }
+
+      .icon p {
+        font-size: 8px;
+        padding-left: 10px;
+      }
+
+      .p-stor > p{
+        font-style: bold;
+        color: black;
+        padding-left: 55px;
+        margin-top: -20px;
+      }
+
+      .space-between {
+        display: flex;
+      }
+
+      .hej-stor > p {
+       padding-left: 125px;
+       font-weight: bold;
+       font-size: 20px;
+       padding-top: 80px;
+      }
+
+      .ikon-stor > i{
+        color: #e6e6e6;
+        margin-left: 0;
+        padding-right: 10px;
+        font-size: 45px;
+        padding-top: 80px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -14px;
+
+      }
+
+      button {
+        display: flex;
+        justify-content: flex-start;
+        color: #7f59be;
+        background-color: #fff8e0;
+        border: none;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+
+      @media (max-width: 700px){
+      .linje {
+          display: none;
+        }
+      }
+
+      </style></head>
+
+
+
+
+      
+
+
+      <body>
+
+        <header class="col-12">
+
+
+          <div class="container">
+            <div class="row">
+
+              <div class="text-header col-12">
+                <h1 class="col-12 ">Card Exempels</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+              </div>
+            </div>
+          </div>
+
+        </header>
+
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+
+              <div class="box col-10 col-md-2 col-lg-3 m-3">
+
+                <div class="text">
+
+                  <p class=" mt-2">OVERLINE</p>
+                   <h6 class="">Headline 6</h6>
+
+                   <div class="grå-text">
+                      <p>Greyhound hello
+                        coldly woderfully
+                        marginally far
+                      </p>
+                  </div>
+
+                      <div class="icon">
+                        <i class="material-icons">share</i>
+                        <p>Meta</p>
+                      </div>
+
+                </div>
+              </div>
+
+              <div class="box col-10 col-md-2 col-lg-3 m-3">
+
+                <div class="text">
+
+                  <p class="col-12 mt-2">OVERLINE</p>
+                   <h6 class="col-12">Headline 6</h6>
+
+                   <div class="grå-text col-12">
+                      <p>Greyhound hello
+                        coldly woderfully
+                        marginally far
+                      </p>
+                  </div>
+
+                      <div class="icon col-12">
+                        <i class="material-icons">share</i>
+                        <p>Meta</p>
+                      </div>
+
+
+                </div>
+              </div>
+
+              <div class="box col-10 col-md-2 col-lg-3 m-3">
+
+                <div class="text">
+
+                  <p class="col-12 mt-2">OVERLINE</p>
+                   <h6 class="col-12">Headline 6</h6>
+
+                   <div class="grå-text col-12">
+                      <p>Greyhound hello
+                        coldly woderfully
+                        marginally far
+                      </p>
+                  </div>
+
+                      <div class="icon col-12">
+                        <i class="material-icons">share</i>
+                        <p>Meta</p>
+                      </div>
+
+
+                </div>
+              </div>
+
+              <div class="box col-10 col-md-2 col-lg-3 m-3">
+
+                <div class="text">
+
+                  <p class="col-12 mt-2">OVERLINE</p>
+                   <h6 class="col-12">Headline 6</h6>
+
+                   <div class="grå-text col-12">
+                      <p>Greyhound hello
+                        coldly woderfully
+                        marginally far
+                      </p>
+                  </div>
+
+                      <div class="icon col-12">
+                        <i class="material-icons">share</i>
+                        <p>Meta</p>
+                      </div>
+
+
+                </div>
+
+              </div>
+
+
+            <div class="box-stor col-10 col-md-5 col-lg-5 m-3 ">
+              <div class="text-stor">
+
+                  <div class="space-between">
+                    <div class="ikon-stor">
+                    <i class="material-icons">error</i>
+                    </div>
+                    <div class="h6-stor">
+                    <h6>Headline 6</h6>
+                    </div>
+                    <div class="hej-stor">
+                      <p>^</p>
+                    </div>
+                  </div>
+                <div class="p-stor">
+                  <p>Body 2</p>
+                </div>
+
+                <div class="grå-text-stor">
+                  <p>Greyhound hello marginally
+                    coldly woderfully marginally
+                    marginally far upon.
+                  </p>
+                </div>
+
+                <div class="button mb-3">
+                  <button type="button" name="button">Button</button>
+                  <button type="button" name="button">Button</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="box-stor col-10 col-md-5 col-lg-5 m-3 ">
+              <div class="text-stor">
+
+                  <div class="space-between">
+                    <div class="ikon-stor">
+                    <i class="material-icons">error</i>
+                    </div>
+                    <div class="h6-stor">
+                    <h6>Headline 6</h6>
+                    </div>
+                    <div class="hej-stor">
+                      <p>^</p>
+                    </div>
+                  </div>
+                <div class="p-stor">
+                  <p>Body 2</p>
+                </div>
+
+                <div class="grå-text-stor">
+                  <p>Greyhound hello marginally
+                    coldly woderfully marginally
+                    marginally far upon.
+                  </p>
+                </div>
+
+                <div class="button mb-3">
+                  <button type="button" name="button">Button</button>
+                  <button type="button" name="button">Button</button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+        </div>
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+  
+
+</body></html>

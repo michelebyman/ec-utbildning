@@ -1,0 +1,486 @@
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  background-color: #fefcf3;
+  background-image: linear-gradient(90deg, #ffce42, #ffce42 280px, transparent 0);
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  padding-left: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.text {
+  width: 100%;
+  height: 100px;
+}
+
+.text h1 {
+  font-size: 85px;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #673ab6;
+  display: flex;
+  align-items: center;
+
+  text-transform: uppercase;
+  padding-left: 165px;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  padding-left: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.bild {
+  width: 100%;
+  height: 400px;
+  background-image: url("roadnature.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.opacity {
+  width: 280px;
+  height: 366px;
+  opacity: 0.3;
+  background-color: orange;
+  position: absolute;
+  top: 375px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.text-section-mitten h1, .text-section-botten h1{
+  padding-top: 90px;
+}
+
+
+.text-section, .text-section-mitten, .text-section-botten {
+  width: 400px;
+  padding-left: 165px;
+}
+
+.text-section {
+  padding-top: 20px;
+}
+
+.text-section h1, .text-section-botten h1,
+.text-section-mitten h1  {
+  font-size: 45px;
+}
+
+.bild-wrap {
+  width: 300px;
+}
+
+img {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  body {
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #fefcf3;
+    background-image: linear-gradient(90deg, #ffce42, #ffce42 190px, transparent 0);
+  }
+
+  header {
+    width: 100%;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 150px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    width: 100%;
+    height: 100px;
+  }
+
+  .text h1 {
+    font-size: 65px;
+    padding-bottom: 15px;
+
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+
+  nav {
+    width: 100%;
+    height: 100px;
+    background-color: #673ab6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-left: 5px;
+  }
+
+  nav ul li {
+    list-style: none;
+    color: white;
+    padding-left: 35px;
+    font-size: 25px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .bild {
+    width: 100%;
+    height: 400px;
+    background-image: url("roadnature.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .opacity {
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+
+  .text-section-mitten > h1, .text-section-botten > h1{
+    padding-top: 90px;
+  }
+
+
+  .text-section, .text-section-mitten, .text-section-botten {
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  .text-section {
+    padding-top: 20px;
+  }
+
+  .text-section h1, .text-section-botten h1,
+  .text-section-mitten h1  {
+    font-size: 65px;
+    font-weight: normal;
+  }
+
+  .bild-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  img {
+    width: 80%;
+    height: 400px;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #fefcf3;
+    background-image: linear-gradient(90deg, #ffce42, #ffce42 190px, transparent 0);
+  }
+
+  header {
+    width: 100%;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    width: 100%;
+    height: 100px;
+  }
+
+  .text h1 {
+    font-size: 65px;
+    padding-bottom: 15px;
+
+  }
+
+  p {
+    font-size: 40px;
+  }
+
+
+  nav {
+    width: 100%;
+    height: 100px;
+    background-color: #673ab6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-left: 5px;
+  }
+
+  nav ul li {
+    list-style: none;
+    color: white;
+    padding-left: 35px;
+    font-size: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .bild {
+    width: 100%;
+    height: 400px;
+    background-image: url("roadnature.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .opacity {
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+
+  .text-section-mitten > h1, .text-section-botten > h1{
+    padding-top: 90px;
+  }
+
+
+  .text-section, .text-section-mitten, .text-section-botten {
+    width: 100%;
+    padding-left: 100px;
+  }
+
+  .text-section {
+    padding-top: 20px;
+  }
+
+  .text-section h1, .text-section-botten h1,
+  .text-section-mitten h1  {
+    font-size: 65px;
+    font-weight: normal;
+  }
+
+  .bild-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  img {
+    width: 80%;
+    height: 400px;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  body {
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #fefcf3;
+    background-image: linear-gradient(90deg, #ffce42, #ffce42 170px, transparent 0);
+  }
+
+  header {
+    width: 100%;
+    height: 600px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-top: 150px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .text {
+    width: 100%;
+    height: 100px;
+  }
+
+  .text h1 {
+    font-size: 55px;
+    padding-bottom: 30px;
+
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  nav {
+    width: 100%;
+    height: 200px;
+    background-color: #673ab6;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+
+  nav ul li {
+    list-style: none;
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 375px;
+    height: 200px;
+  }
+
+  .bild {
+    width: 100%;
+    height: 480px;
+    background-image: url("e.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .opacity {
+    display: none;
+  }
+
+  .wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+
+  .text-section-mitten > h1, .text-section-botten > h1{
+    padding-top: 90px;
+  }
+
+
+  .text-section, .text-section-mitten, .text-section-botten {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .text-section {
+    padding-top: 20px;
+  }
+
+  .text-section h1, .text-section-botten h1,
+  .text-section-mitten h1  {
+    font-size: 55px;
+    font-weight: normal;
+  }
+
+  .bild-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  img {
+    width: 80%;
+    height: 200px;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+}

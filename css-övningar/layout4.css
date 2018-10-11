@@ -65,7 +65,7 @@ nav ul li {
 .bild {
   width: 100%;
   height: 400px;
-  background-image: url("file:///Users/michelebyman/Documents/ec-utboldning/css-o%CC%88vningar/roadnature.jpeg");
+  background-image: url("roadnature.jpeg");
   background-size: cover;
   position: relative;
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>övning1</title>
+  </head>
+
+  <style>
+  /** Write your CSS here **/
+
+
+/** Do not change this **/
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 20px;
+  color: #808080;
+}
+
+p {
+  margin: 20px;
+}
+
+#thelist {
+  list-style: upper-roman;
+}
+
+#header-title {
+  color: #ccc !important;
+}
+
+/*1 a*/
+#thelist li:nth-child(even){
+  color: grey;
+}
+/*1 b*/
+#thelist {
+  list-style: none;
+}
+
+/*1 c*/
+.beer {
+  display: none;
+}
+
+h3 ~ ul {
+  margin-left: 30px;
+}
+
+  </style>
+
+
+  <body>
+
+    <div class="page">
+  <div class="page-content">
+    <h2>Welcome to the site</h2>
+    <p>This is where everything happens.</p>
+    <h3>Here are some things:</h3>
+    <ul id="thelist">
+      <li>NES</li>
+      <li>SNES</li>
+      <li>Sega Mega Drive</li>
+      <li>Atari 5200</li>
+    </ul>
+    <ul id="thelist2">
+      <li>Water</li>
+      <li class="beer">Beer</li>
+      <li>Orange Juice</li>
+      <li>Soda</li>
+    </ul>
+  </div>
+</div>
+
+  </body>
+</html>
