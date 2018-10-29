@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>animationer</title>
+  </head>
+
+  <style>
+  .bilder {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+  }
+
+  .wrap {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 10px;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+
+  }
+
+  </style>
+
+  <body>
+    <!-- Här börjar html-koden-->
+<div class="bilder">
+  <div class="wrap">
+  <img class="rotateIn" src="coin.png" alt="">
+  </div>
+  <div class="wrap">
+  <img class="rotateIn" src="4k-wallpaper-cloud-formation-clouds-1480799.jpg" alt="">
+  </div>
+  <div class="wrap">
+  <img class="rotateIn" src="architecture-bag-bridge-1482782.jpg" alt="">
+  </div>
+  <div class="wrap">
+  <img class="rotateIn" src="grass-man-night-92923.jpg" alt="">
+  </div>
+</div>
+
+
+  </body>
+</html>

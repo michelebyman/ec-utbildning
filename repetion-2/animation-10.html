@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>animation-10</title>
+  </head>
+
+  <style media="screen">
+
+  .wrap {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .kula {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+  }
+
+  .kula2 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: up-down1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+  }
+
+  .kula3 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    animation-name: up-down2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes up-down {
+    0% {
+      transform: translate(0,00px);
+    }
+    10% {
+      transform: translate(0,00px);
+    }
+    30% {
+      transform: translate(0,200px);
+    }
+    100% {
+      transform: translate(0,200px);
+    }
+  }
+
+  @keyframes up-down1 {
+    0% {
+      transform: translate(0,00px);
+    }
+    20% {
+      transform: translate(0,00px);
+    }
+
+    40% {
+      transform: translate(0,200px);
+    }
+    100% {
+      transform: translate(0,200px);
+    }
+  }
+
+  @keyframes up-down2 {
+    0% {
+      transform: translate(0,00px);
+    }
+    30% {
+      transform: translate(0,00px);
+    }
+    60% {
+      transform: translate(0,200px);
+    }
+    100% {
+      transform: translate(0,200px);
+    }
+  }
+
+
+  </style>
+
+  <body>
+    <!-- Här börjar html-koden-->
+
+    <div class="wrap">
+      <div class="kula"></div>
+      <div class="kula2"></div>
+      <div class="kula3"></div>
+
+    </div>
+
+
+  </body>
+</html>

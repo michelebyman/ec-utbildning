@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>övning3-repetition-2</title>
+
+  </head>
+
+  <style media="screen">
+
+  html, body {
+  box-sizing: border-box;
+  }
+
+  * {
+  box-sizing: inherit;
+  font-family: 'Khula', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+
+  .container-fluid {
+    max-width: 1200px;
+  }
+
+
+  .box {
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    max-width: 300px;
+    background-color: #ff7b7d;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 130px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .wrap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+
+  @media screen and (max-width:700px) {
+    .wrap-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width:1000px) {
+    .wrap-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  </style>
+
+  <body>
+    <!-- Här börjar html-koden-->
+
+    <div class="wrap">
+      <div class="box"><p>Tom</p></div>
+      <div class="box"><p>Denise</p></div>
+      <div class="box"><p>Kendra</p></div>
+      <div class="box"><p>Ben</p></div>
+      <div class="box"><p>Cindy</p></div>
+      <div class="box"><p>Åke</p></div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="box"><p>Tom</p></div>
+        <div class="box"><p>Denise</p></div>
+        <div class="box"><p>Kendra</p></div>
+        <div class="box"><p>Ben</p></div>
+        <div class="box"><p>Cindy</p></div>
+        <div class="box"><p>Åke</p></div>
+      </div>
+    </div>
+
+<div class="wrap-grid">
+    <div class="box"><p>Tom</p></div>
+    <div class="box"><p>Denise</p></div>
+    <div class="box"><p>Kendra</p></div>
+    <div class="box"><p>Ben</p></div>
+    <div class="box"><p>Cindy</p></div>
+    <div class="box"><p>Åke</p></div>
+</div>
+
+
+    <!-- Bootstrap script för att alla komponenter ska fungera -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>

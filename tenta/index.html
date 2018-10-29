@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="do_not_touch.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Tentamen</h1>
+    <p>Nedan följer de uppgifter som behöver göras. Varje uppgift ska lösas inuti .problem-area diven. CSS:en ska skrivas i style.css. Du får inte ändra någon CSS som är skriven i "do_not_touch.css" filen. Du får heller inte ändra någon HTML i denna filen som inte ligger under en .problem-area div. Bootstraps CSS är redan inladdat på sidan som hjälp för att lösa Bootstrap uppgifterna.</p>
+    <p>För att bli godkänd behöver du klara alla G-uppgifterna</p>
+    <p>För att få VG behöver du dessutom klara alla VG-uppgifterna</p>
+
+    <h2>Inlämning</h2>
+    <p>När du är klar med ska du lämna in filerna index.html och style.css via PingPong. Om du löst uppgift 15 ska du också ladda upp den nya filen du skapat (problem15.html) plus eventuella nya filer som du skapat i samband med den uppgiften (CSS-filer t.ex.).</p>
+
+    <h2>G-uppgifter</h2>
+
+    <div class="problem" id="problem1">
+      <h3>Uppgift 1</h3>
+      <p>Gör så att texten i rutan har röd färg och 24px i font storlek.</p>
+      <div class="problem-area">
+        <p>Denna texten ska vara röd och ha 24px i storlek</p>
+      </div>
+    </div>
+
+    <div class="problem" id="problem2">
+      <h3>Uppgift 2</h3>
+      <p>Gör så att de följande tre divarna ligger brevid varandra på samma rad. Du får inte ta bort klasserna som redan är satta inuti .problem-area. Men du får lov att lägga till hur många klasser du vill.</p>
+      <div class="problem-area">
+        <div class="box bg-red"></div>
+        <div class="box bg-blue"></div>
+        <div class="box bg-green"></div>
+      </div>
+    </div>
+
+    <div class="problem" id="problem3">
+      <h3>Uppgift 3</h3>
+      <p>Skapa en hyperlänk till sidan http://google.com inne i rutan.</p>
+      <div class="problem-area">
+        <a href="http://google.com">Länk</a>
+      </div>
+    </div>
+
+    <div class="problem" id="problem4">
+      <h3>Uppgift 4</h3>
+      <p>I rutan ligger det flera olika frukter. Skapa en oordnad lista av alla dessa värdena. </p>
+      <div class="problem-area">
+        <ul>
+          <li>Banan</li>
+          <li>Äpple</li>
+          <li>Päron</li>
+          <li>Melon</li>
+          <li>Ananas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="problem" id="problem5">
+      <h3>Uppgift 5</h3>
+      <p>I rutan ligger det flera rader med namn och åldrar . Skapa en tabell med två kolumner och fyra rader. I den första kolumnen ska alla namn ligga, i den andra kolumnen ska alla åldrar ligga. Lägg även till en header rad med värdena "Namn" och "Ålder" i varsin kolumn. Ta även bort de br taggar som är utplacerade.</p>
+      <div class="problem-area">
+        <table>
+          <thead>
+            <tr>
+              <th>Namn</th>
+              <th>Ålder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Knatte</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>Fnatte</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>Tjatte</td>
+              <td>45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="problem" id="problem6">
+      <h3>Uppgift 6</h3>
+      <p>Återskapa CSS-animationen på <a href="images/problem6.gif">den här</a> bilden och applicera på bilden i rutan.</p>
+      <div class="problem-area">
+          <img src="images/star.png" width="100" />
+      </div>
+    </div>
+
+    <div class="problem" id="problem7">
+      <h3>Uppgift 7</h3>
+      <p>I rutan ligger det en text. Centrera texten i mitten av rutan, både horisontellt och vertikalt.</p>
+      <div class="problem-area">
+        <p>Centrera mig!</p>
+      </div>
+    </div>
+
+    <div class="problem" id="problem8">
+      <h3>Uppgift 8</h3>
+      <p>I rutan ligger det tre divar. Använd bootstrap grid system för att göra så att divarna ligger brevid varandra och tillsammans fyller upp hela raden de ligger på (förutom den padding som finns). Dessutom ska den första rutan (den röda) ta upp dubbelt så mycket plats som de andra två gör (<a href="images/problem8.png" target="_blank">se följande bild</a>). </p>
+
+        <p>Du får inte ta bort de klasser som redan ligger inuti .problem-area. Däremot får du lägga till hur många klasser du vill.</p>
+      <div class="problem-area">
+        <div class="container">
+          <div class="row">
+            <div class="box col-6 bg-red"></div>
+            <div class="box col-3 bg-blue"></div>
+            <div class="box col-3 bg-green"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="problem" id="problem9">
+      <h3>Uppgift 9</h3>
+      <p>I rutan ligger det en knapp. Lägg på bootstrap klasser på knappen för att formatera den som en bootstrap "primary" knapp.</p>
+      <div class="problem-area">
+        <button class="btn btn-primary" type="button">Primary</button>
+      </div>
+    </div>
+
+    <div class="problem" id="problem10">
+      <h3>Uppgift 10</h3>
+      <p>I rutan ligger det en text. Med hjälp av position attributet och left, top, right eller bottom, positionera texten så att den alltid ligger längst ner i det högra hörnet. Notera att rutan har "position" satt till "relative" redan.</p>
+      <div class="problem-area">
+        <p>Lägg mig i nedersta högra hörnet!</p>
+      </div>
+    </div>
+
+    <div class="problem" id="problem11">
+      <h3>Uppgift 11</h3>
+      <p>Använd CSS Grid Layout för att strukturera boxarna i rutan enligt <a href="images/problem11.png" target="_blank">följande bild.</a></p>
+      <div class="problem-area">
+        <div class="container11">
+          <div class="item11">1</div>
+          <div class="item11">2</div>
+          <div class="item11">3</div>
+          <div class="item11">4</div>
+          <div class="item11">5</div>
+          <div class="item11">6</div>
+          <div class="item11">7</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="problem" id="problem12">
+      <h3>Uppgift 12</h3>
+      <p>Skapa ett formulär i rutan som innehåller två typer av inputfält, ett fält för email, och ett fält för lösenord.</p>
+      <p>För att få VG måste du lösa uppgiften med bra HTML5-validering, vilket inkulderar följande krav:</p>
+      <ul>
+        <li>Inputfältet för email ska validera att formatet på det användaren matat in är korrekt.</li>
+        <li>Båda fälten ska anges som obligatoriska.</li>
+        <li>Lösenordsfältet måste innehålla minst 8 tecken för att vara giltigt.</li>
+      </ul>
+      <div class="problem-area">
+        <form class="" action="index.html" method="post">
+          <input type="email" name="Email" value="" placeholder="Email" required>
+          <input type="password" name="password" value="" placeholder="Password" required minlength="8">
+        </form>
+      </div>
+    </div>
+
+    <h2>VG-uppgifter</h2>
+
+    <div class="problem" id="problem13">
+      <h3>Uppgift 13</h3>
+      <p>I rutan finns tre boxar. Ändra så att boxarna tillsammans tar upp hela utrymmet på raden. Boxarna ska vara lika stora. När breddstorleken på webbläsaren är under 540px så ska varje box ta upp en hel rad i sin bredd. Du får inte ta bort de klasser som redan ligger inuti .problem-area. Däremot får du lägga till hur många klasser du vill.</p>
+      <div class="problem-area">
+        <div class="box bg-red"></div>
+        <div class="box bg-blue"></div>
+        <div class="box bg-green"></div>
+      </div>
+    </div>
+    <div class="problem" id="problem14">
+      <h3>Uppgift 14</h3>
+      <p>Använd flexbox för att formattera divarna i rutan så att de är placerade på samma sätt som i <a href="images/problem14.png" target="_blank">följande bild</a>.</p>
+      <p>Du får lägga till fler div-taggar (eller andra typer av element) i HTML-strukturen och strukturera om. Däremot får du bara ha fem stycken element med klassen .item.</p>
+      <hr />
+      <div class="problem-area">
+        <div class="main">
+          <div class="wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+          </div>
+          <div class="wrap2">
+            <div class="item">3</div>
+          </div>
+          <div class="wrap3">
+            <div class="item">4</div>
+            <div class="item">5</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="problem" id="problem15">
+      <h3>Uppgift 15</h3>
+      <p>Skapa en ny sida utifrån designen enligt given <a href="images/problem15.png" target="_blank">bild</a> (högerklicka på bilden och välj "öppna bild i ny flik" för att se en större version, eller tryck på länken). Döp den nya sidan till problem15.html.</p>
+      <p>För att klara uppgiften ska du:</p>
+      <ol>
+        <li>Implementera en snarlik struktur på din layout som på bilden.</li>
+        <li>Använda bra semantiska HTML5-element.</li>
+      </ol>
+      <p>Du behöver <b>inte</b> återskapa så att det ser exakt ut som på bilden när det gäller typsnitt, storlekar, marginaler eller färger. Fokusera istället på att få rätt layout så att elementet ligger på rätt plats och att använda semantiska element.</p>
+      <img src="images/problem15.png" height="300">
+    </div>
+  </main>
+</body>
+</html>

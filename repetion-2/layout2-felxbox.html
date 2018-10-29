@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>login</title>
+
+
+
+  </head>
+
+  <style media="screen">
+
+  /*Här börjar css för sidan*/
+
+  html, body {
+  box-sizing: border-box;
+  }
+
+  * {
+  box-sizing: inherit;
+  font-family: 'Khula', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  /*Här börjar css för.....*/
+
+  .container {
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .logga {
+    width: 200px;
+    height: 200px;
+    background-color: #5d3980;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 85px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  .pp {
+    padding-left: 5px;
+    font-size: 35px;
+  }
+
+  .flex {
+    display: flex;
+    align-items:  baseline;
+    justify-content: center;
+  }
+
+  .button {
+    width: 500px;
+    height: 70px;
+    margin-top: 30px;
+    color: white;
+    background-color: #0078ff;
+    font-size: 35px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .style {
+    width:500px;
+    height:70px;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 35px;
+  }
+
+  .b {
+    margin-top: -18px;
+  }
+
+
+  .copy {
+    font-size: 35px;
+    color: #7e7f83;
+    margin-top: 100px;
+  }
+
+
+
+
+  /*Här är css för att göra sidan responsiv alltid under all annan css*/
+
+  @media screen and (max-width: 600px) {
+
+  }
+
+  </style>
+
+  <body>
+    <!-- Här börjar html-koden-->
+
+    <div class="container">
+
+      <div class="logga">
+        <h1>B</h1>
+      </div>
+
+      <div class="text">
+        <p>Please sign in</p>
+      </div>
+
+      <form>
+      <input class="style" type="email" name="email" value="" placeholder="Email address"> <br>
+
+      <input class="style b" type="assword" name="Password" value="" placeholder="Password"> <br>
+
+      <div class="flex">
+      <input class="bk" type="checkbox" name="Remeber me" value=""><p class="pp">Remember me</p>
+     </div>
+
+     <input class="button" type="button" name="Sign in" value="Sign in">
+
+     <p class="copy">&copy; 2017-2018</p>
+      </form>
+    </div>
+
+
+  </body>
+</html>

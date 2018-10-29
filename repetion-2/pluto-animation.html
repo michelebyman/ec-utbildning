@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>pluto</title>
+
+    <style media="screen">
+
+
+    .box {
+      width: 10px;
+      height:500px;
+      position: absolute;
+      background-color: black;
+      animation-name: slide;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes slide {
+      0% {
+        width: 10px;
+        background-color: black;
+        left: 0;
+      }
+      50% {
+        width: 400px;
+        background-color: black;
+        left: 0;
+      }
+      100% {
+        width: 10px;
+        background-color: black;
+        left: 400px;
+      }
+    }
+
+
+    </style>
+
+
+  </head>
+
+  <body>
+    <!-- Här börjar html-koden-->
+
+    <div class="box"></div>
+    <img src="pluto.png" alt="">
+
+
+
+
+  </body>
+</html>

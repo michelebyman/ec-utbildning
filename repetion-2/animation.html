@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>Titel</title>
+  </head>
+
+  <style media="screen">
+
+
+  .container {
+  display: flex;
+}
+
+.container > div {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.circle {
+  animation-name: resize;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: blue;
+}
+
+
+.circle:nth-child(2){
+  animation-name: border1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: pink;
+}
+
+.circle:nth-child(3) {
+  animation-name: resize1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: green;
+}
+
+
+
+  @keyframes resize {
+    0% {
+      height: 100px;;
+      width: 20px;
+    }
+    100% {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  @keyframes border1 {
+    0% {
+      height: 100px;;
+      width: 100px;
+
+    }
+    100% {
+      height: 100px;
+      width: 100px;
+      border-radius: 45%;
+    }
+  }
+
+  @keyframes resize1 {
+    0% {
+      height: 20px;;
+      width: 100px;
+    }
+    100% {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  </style>
+
+  <body>
+
+<div class="main">
+
+
+  <div class="circle"></div>
+    <div class="circle"></div>
+      <div class="circle"></div>
+
+
+</div>
+  </body>
+</html>

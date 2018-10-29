@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>animation-9</title>
+  </head>
+
+
+  <style media="screen">
+  .wrapper{
+    background-color: black;
+    width: 800px;
+    height: 500px;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .kula {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    animation-name: vertical;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+
+  .streck {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .streck2 {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes up-down {
+    0% {
+      transform: translate(0,0);
+    }
+
+    100% {
+      transform: translate(0px,390px);
+    }
+  }
+
+  @keyframes vertical {
+    0% {
+      transform: translate(0,0);
+    }
+    100% {
+      transform: translate(650px,430px);
+    }
+  }
+
+  </style>
+
+
+  <body>
+    <!-- Här börjar html-koden-->
+
+<div class="wrapper">
+  <div class="kula"></div>
+  <div class="streck"></div>
+  <div class="streck2"></div>
+</div>
+
+
+  </body>
+</html>

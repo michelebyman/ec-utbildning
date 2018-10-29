@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<!-- Språk på sidan & från vilket håll man läser ex: vänster till höger -->
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Hjälper till så sidan ser bra ut på olika enheter-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Text-styling-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Google-iconer för styling-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!--Hjälper till med css på olika browsers -->
+      <link href="https://unpkg.com/normalize.css@8.0.0/normalize.css" rel="stylesheet">
+    <!--Hjälper till med animationer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Egen CSS-fil-->
+    <link rel="stylesheet" href="">
+    <!-- Kort förklaring av sidan. -->
+    <meta name="description" content="Glöm ej en specifik beskrivning av sidan">
+    <!-- Nyckelord/keywords, påverkar SEO. -->
+    <meta name="keywords" content="ord1,ord2,ord3">
+    <!-- Titel på sidan, påverkar även SEO -->
+    <title>Animationer</title>
+  </head>
+
+<style>
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+  .box {
+    width: 100px;
+    height: 100px;
+
+    animation-name: color;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes color {
+  0%  {
+    background-color: yellow;
+    }
+100% {
+  background-color: green;
+
+}
+  }
+
+  .bild {
+    max-width: 300px;
+
+  }
+  .bild img {
+    object-fit: cover;
+    width: 100%;
+    animation-name: scale;
+    animation-duration: 7s;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .box1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-top: 100px;
+    padding: 5px;
+
+  }
+
+  .kula {
+    background-color: blue;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation-name: kula;
+    animation-duration: 3s;
+    animation-direction: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes kula {
+    0% {
+      transform: translate(0,0);
+    }
+
+    25% {
+      transform: translate(0, 80px);
+    }
+
+    50% {
+      transform: translate(80px, 80px);
+    }
+    75% {
+      transform: translate(80px,0);
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+    }
+
+  }
+
+  img {
+    animation-name: snurrar;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes snurrar {
+    0% {
+      transform: rotatey(0);
+    }
+    50% {
+      transform: rotatey(180deg);
+    }
+    100% {
+      transform: rotatey(0);
+    }
+  }
+
+
+
+</style>
+
+  <body>
+    <!-- Här börjar html-koden-->
+<div class="wrapper">
+
+
+    <div class="box"></div>
+
+    <div class="bild">
+      <img src="architecture-bag-bridge-1482782.jpg" alt="">
+    </div>
+
+    <div class="box1">
+      <div class="kula">
+
+      </div>
+    </div>
+
+    <div class="img">
+      <img src="coin.png" alt="">
+    </div>
+</div>
+
+</div>
+  </body>
+</html>

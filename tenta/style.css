@@ -1,0 +1,89 @@
+#problem1 .problem-area {
+  color: red;
+  font-size: 24px;
+}
+
+#problem2 .problem-area {
+display: flex;
+}
+
+#problem6 .problem-area img {
+animation-name: snurr;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes snurr {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#problem7 .problem-area {
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+#problem10 .problem-area p {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+#problem11 .problem-area .container11 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#problem11 .problem-area .container11 .item11:first-child {
+grid-column: 1/3;
+}
+
+#problem13 .problem-area {
+display: flex;
+}
+
+#problem13 .problem-area .box {
+flex:1;
+}
+
+@media screen and (max-width:540px) {
+  #problem13 .problem-area {
+  display: flex;
+  flex-direction: column;
+  }
+  #problem13 .problem-area .box {
+  width: 100%;
+  }
+}
+
+#problem14 .problem-area .main {
+display: flex;
+
+}
+
+#problem14 .problem-area .main .wrap {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+#problem14 .problem-area .main .wrap2 {
+display: flex;
+flex: 1;
+}
+
+#problem14 .problem-area .main .wrap3 {
+display: flex;
+flex-direction: column;
+flex: 1;
+}
+
+#problem14 .problem-area .main .item {
+flex: 1;
+}

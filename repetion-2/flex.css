@@ -1,0 +1,147 @@
+
+/*Här börjar css för sidan*/
+
+html, body {
+box-sizing: border-box;
+}
+
+* {
+box-sizing: inherit;
+font-family: 'Khula', sans-serif;
+margin: 0;
+padding: 0;
+}
+/*Här börjar css för.....*/
+
+nav {
+  width: 100%;
+  display: flex;
+  background-color: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 3px 15px 31px -4px rgba(209,209,209,1);
+}
+
+.links > a {
+  text-decoration: none;
+  color: Black;
+
+}
+
+.links {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  width: 400px;
+  height: 70px;
+  align-items: center;
+}
+
+span {
+  padding-left: 30px;
+}
+
+.links > a:last-child {
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 5px;
+  color:blue;
+}
+
+section{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrap {
+  width: 400px;
+  color: grey;
+}
+
+.b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 350px;
+  width: 270px;
+  background-color: white;
+  margin: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: lightgrey;
+  color: #4c4646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: : 4px;
+  border-top-right-radius: : 4px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  align-items: baseline;
+  color: grey;
+}
+
+h3:nth-child(1) {
+  font-size: 52px;
+  color: #4c4646;
+}
+
+.tt {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tt > a {
+  line-height: 90px;
+  border: 2px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+.card:not(:nth-child(1)) a {
+  background-color: blue;
+  color: white;
+}
+
+.line {
+  width: 55%;
+  margin: 60px;
+  border-top: 1px solid lightgrey;
+}
+
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+
+
+/*Här är css för att göra sidan responsiv alltid under all annan css*/
+
+@media screen and (max-width: 600px) {
+
+}
